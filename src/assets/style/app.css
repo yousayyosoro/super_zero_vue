@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.el-popper .popper__arrow,
+.el-popper .popper__arrow::after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: none !important;
+ }
+ a{
+     display: inline-block;
+ }

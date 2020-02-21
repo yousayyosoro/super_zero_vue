@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "msg": "SUCC",
+  "data": [
+    {
+      "value": 1,
+      "name": "1房",
+      "children": [
+        {
+          "value": 2,
+          "name": "1厅",
+          "children": [
+            {
+              "value": 3,
+              "name": "1卫",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": 4,
+      "name": "1房",
+      "children": [
+        {
+          "value": 5,
+          "name": "1厅",
+          "children": [
+            {
+              "value": 6,
+              "name": "1卫",
+              "children": []
+            },
+            {
+              "value": 7,
+              "name": "2卫",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
