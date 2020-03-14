@@ -47,6 +47,18 @@ import 'tinymce/plugins/fullscreen' //全屏插件
 
 //本地化
 import './util/zh_CN.js'
+// 引用museUI
+import MuseUI from 'muse-ui';
+import 'muse-ui/dist/muse-ui.css';
+import theme from 'muse-ui/lib/theme';
+import * as colors from 'muse-ui/lib/theme/colors';
+
+theme.add('custom-theme', {
+  primary: colors.indigo,
+  secondary: colors.pinkA200
+});
+
+Vue.use(MuseUI);
 
 Vue.prototype.$tinymce = tinymce;
 Vue.use(VueTinymce);
@@ -55,7 +67,7 @@ Vue.config.productionTip = false;
 
 
 //配置导航守卫
-router.beforeEach((to, from, next) => {
+/*router.beforeEach((to, from, next) => {
 	let authResult=false;
 	if(to.meta.role!=='*'){
 	  let userInfo=Jxconfig.userInfo;
@@ -66,13 +78,13 @@ router.beforeEach((to, from, next) => {
 		  return false;
 		}
 	  });
-	  if(!authResult){
+	  /!*if(!authResult){
 		Message({
 		  showClose: true,
 		  message:"权限不足",
 		  type: 'warning'
 		});
-	  }
+	  }*!/
 	}else{
 	  if (to.matched.length === 0) {                                        //如果未匹配到路由
 		from.name ? next({ name: from.name }) : next('/');   //如果上级也未匹配到路由则跳转登录页面，如果上级能匹配到则转上级路由
@@ -86,7 +98,7 @@ router.beforeEach((to, from, next) => {
 	if (from.fullPath == '/portal') {
 	  //alert('页面信息保存成功！');
 	}
-  });
+  });*/
 
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
