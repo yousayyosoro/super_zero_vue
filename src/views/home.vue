@@ -14,89 +14,35 @@
     </mu-appbar>
     <mu-list>
       <mu-sub-header>今天</mu-sub-header>
-      <mu-list-item :ripple="false">
+      <div class="">
+        <mu-list-item :ripple="false">
         <div class="SZ-flex padding-tb16 width100" @click="goDetail()">
           <div class="img-box"  style="width: 300px;margin-right: 16px">
             <img src="http://q72m9s5e1.bkt.clouddn.com/img.jpg" width="100%">
           </div>
           <div class="width100">
-            <div class="font-bold fontL">明日方舟主题摄影活动</div>
-            <div class="" style="height: calc(100% - 160px);">
-              <div class="fontM">
+            <div class="font-bold fontXXL">明日方舟主题摄影活动</div>
+            <div class="" style="height: calc(100% - 240px);">
+              <div class="fontL">
                 2020.05.01-05.02 广州市 app摄影基地
               </div>
               <div class="" style="padding-top: 16px">
-                <span class="fontS bg-red400" style="padding: 8px 16px;color: #ffffff">热门</span>
+                <span class="fontS bg-red400 tag" style="padding: 8px 16px;color: #ffffff">热门</span>
+                <span class="fontS bg-red400 tag" style="padding: 8px 16px;color: #ffffff">绝赞好评</span>
               </div>
             </div>
             <div class="flex-wrap-between width100">
-              <div class="">
+              <div class="" style="width: 400px">
                 <div class=""><span class="padding-r16 fontXL font-bold red400">￥66</span><span class="fontS">25/50人开团</span></div>
-                <div class="grey600 fontM">"超多精彩在这里"</div>
+                <div class="grey600 fontM ">"超多精彩在这里,超多精彩在这里,超多精彩在这里,超多精彩在这里"</div>
               </div>
               <div class="tags red400 fontXL border-r400" style="padding: 8px 48px;margin-right: 32px">进行中</div>
             </div>
           </div>
         </div>
       </mu-list-item>
-      <mu-divider></mu-divider>
-      <mu-list-item :ripple="false" @click="goDetail()">
-        <div class="SZ-flex padding-tb16 width100">
-          <div class="img-box"  style="width: 300px;margin-right: 16px">
-            <img src="http://q72m9s5e1.bkt.clouddn.com/img.jpg" width="100%">
-          </div>
-          <div class="width100">
-            <div class="font-bold fontL">明日方舟主题摄影活动</div>
-            <div class="fontM" style="height: calc(100% - 160px);">2020.05.01-05.02 广州市 app摄影基地</div>
-            <div class="flex-wrap-between width100">
-              <div class="">
-                <div class=""><span class="padding-r16 fontXL font-bold red400">￥66</span><span class="fontS">25/50人开团</span></div>
-                <div class="grey600 fontM">"超多精彩在这里"</div>
-              </div>
-              <div class="tags blue500 fontXL border-b500" style="padding: 8px 48px;margin-right: 32px">预约中</div>
-            </div>
-          </div>
-        </div>
-      </mu-list-item>
-      <mu-divider></mu-divider>
-      <mu-list-item :ripple="false" @click="goDetail()">
-        <div class="SZ-flex padding-tb16 width100">
-          <div class="img-box"  style="width: 300px;margin-right: 16px">
-            <img src="http://q72m9s5e1.bkt.clouddn.com/img.jpg" width="100%">
-          </div>
-          <div class="width100">
-            <div class="font-bold fontL">明日方舟主题摄影活动</div>
-            <div class="fontM" style="height: calc(100% - 160px);">2020.05.01-05.02 广州市 app摄影基地</div>
-            <div class="flex-wrap-between width100">
-              <div class="">
-                <div class=""><span class="padding-r16 fontXL font-bold red400">￥66</span><span class="fontS">25/50人开团</span></div>
-                <div class="grey600 fontM">"超多精彩在这里"</div>
-              </div>
-              <div class="tags green500 fontXL border-g500" style="padding: 8px 48px;margin-right: 32px">已结束</div>
-            </div>
-          </div>
-        </div>
-      </mu-list-item>
-      <mu-divider></mu-divider>
-      <mu-list-item :ripple="false" @click="goDetail()">
-        <div class="SZ-flex padding-tb16 width100">
-          <div class="img-box"  style="width: 300px;margin-right: 16px">
-            <img src="http://q72m9s5e1.bkt.clouddn.com/img.jpg" width="100%">
-          </div>
-          <div class="width100">
-            <div class="font-bold fontL">明日方舟主题摄影活动</div>
-            <div class="fontM" style="height: calc(100% - 160px);">2020.05.01-05.02 广州市 app摄影基地</div>
-            <div class="flex-wrap-between width100">
-              <div class="">
-                <div class=""><span class="padding-r16 fontXL font-bold red400">￥66</span><span class="fontS">25/50人开团</span></div>
-                <div class="grey600 fontM">"超多精彩在这里"</div>
-              </div>
-              <div class="tags grey600 fontXL border-grey600" style="padding: 8px 48px;margin-right: 32px">已过期</div>
-            </div>
-          </div>
-        </div>
-      </mu-list-item>
-      <mu-divider></mu-divider>
+        <mu-divider></mu-divider>
+      </div>
     </mu-list>
   </mu-paper>
 </div>

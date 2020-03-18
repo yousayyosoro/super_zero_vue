@@ -4,7 +4,8 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 import login from './../views/home'
-import detail from './../views/detail'
+// import detail from './../views/detail'
+const detail =()=>import('./../views/detail')
 
 const routes = [
   {
