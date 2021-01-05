@@ -16,7 +16,7 @@
   "dependencies": {
     "@packy-tang/vue-tinymce": "^1.0.0",
     "@tinymce/tinymce-vue": "^3.1.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "cross-env": "^5.2.0",
     "element-ui": "^2.13.0",
